@@ -194,7 +194,7 @@ def f_test(df, model):
     # RSS - Residual Sum of Squares
     rss = sum(model.resid ** 2)
 
-    # SSE - Explained Sum of Squares, also known as the regression sum of squares
+    # SSE
     sse = sum((model.fittedvalues - df.iloc[:, 1].mean()) ** 2)
 
     # Degrees of freedom
