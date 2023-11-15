@@ -106,7 +106,7 @@ def graph_regression(df):
     plt.ylabel('Jet Fuel Price', fontsize=14)
 
     plt.savefig('correlation_plot.png', dpi=300)
-    plt.show()
+    # plt.show()
 
 
 def regression_details(df):
@@ -183,9 +183,7 @@ def t_test(model, df, alpha=0.025):
         print(f"{key}: {value}")
     print()
     print("===" * 30)
-
-
-
+    
     return result
 
 
