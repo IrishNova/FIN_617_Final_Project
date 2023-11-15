@@ -145,7 +145,7 @@ def regression_details(df):
     return model
 
 
-def t_test(model, df, alpha=0.025):
+def t_test(model, df, alpha=0.05):
     b1 = model.params[1]
     std_err = model.bse[1]
     df_resid = model.df_resid
